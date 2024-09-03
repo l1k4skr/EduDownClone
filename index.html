@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            background-color: #eaeae8;
+
+            > div {
+                margin-left: 20px;
+            }
+
+            > ul {
+                display: flex;
+                list-style: none;
+                > li {
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    > a {
+                        text-decoration: none;
+                        color: #333;
+                    }
+                }
+            }
+            > ul > li:hover{
+                border-radius: 10px;
+                background-color: #f3ce54;
+                transition : 1s ease;
+            }
+        }
+
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="http://127.0.0.1:3000/">
+                <img src="https://static.wixstatic.com/media/0a8059_2238928883ab4c278a1231c12510b720~mv2.png/v1/fill/w_51,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0a8059_2238928883ab4c278a1231c12510b720~mv2.png" alt="">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Iniciar Sesión</a></li>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Agenda de box</a></li>
+            <li><a href="#">Estado de Box</a></li>
+            <li><a href="#">Administrar centros de Atención</a></li>
+            <li><a href="#">Administrar equipos medicos</a></li>
+            <li><a href="#">Administrar Box</a></li>
+            <li><a href="#">Administrar Pacientes</a></li>
+            <li><a href="#">Modificar Agenda</a></li>
+            <li><a href="#">Reportar Evento</a></li>
+            <li><a href="#">Consultar Disponibilidad</a></li>
+            <li><a href="#">Generar registro de insumo</a></li>
+            <li><a href="#">Reporte de Box</a></li>
+        </ul>
+        
+    </header>
+    <main>
+        <h1>ÉL SIENTE QUE TODO ES POSIBLE. ¿Y TÚ?</h1>
+        <p>Queremos cambiar la visión del mundo que el mundo tiene del síndrome de Down y enviar un mensaje global de aceptación para todos.</p>
+    </main>
+</body>
+</html>

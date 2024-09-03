@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+
+    <script type="module">
+        const titulo = document.querySelector('.titulo')
+
+        titulo.addEventListener('click', function changeColor(e){
+            if (titulo.style.color === 'green') {
+                titulo.style.color = 'red';
+            } else {
+                titulo.style.color = 'green';
+            }
+            
+        })
+    </script>
+    
     <style>
         body {
             
@@ -17,6 +31,9 @@
             width: 80%;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         header {
@@ -34,11 +51,14 @@
                 display: flex;
                 list-style: none;
                 > li {
-                    margin-right: 10px;
                     display: flex;
                     align-items: center;
                     padding-left: 10px;
                     padding-right: 10px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+
                     > a {
                         text-decoration: none;
                         color: #333;
@@ -67,12 +87,6 @@
                 <img src="https://static.wixstatic.com/media/0a8059_2238928883ab4c278a1231c12510b720~mv2.png/v1/fill/w_51,h_75,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0a8059_2238928883ab4c278a1231c12510b720~mv2.png" alt="">
             </a>
         </div>
-
-
-
-
-
-        
         <ul>
             <li><a href="#">Iniciar Sesión</a></li>
             <li><a href="#">Registrarse</a></li>
@@ -88,11 +102,14 @@
             <li><a href="#">Generar registro de insumo</a></li>
             <li><a href="#">Reporte de Box</a></li>
         </ul>
-        
     </header>
     <main>
-        <h1>ÉL SIENTE QUE TODO ES POSIBLE. ¿Y TÚ?</h1>
+        <h1 class="titulo">ÉL SIENTE QUE TODO ES POSIBLE. ¿Y TÚ?</h1>
         <p>Queremos cambiar la visión del mundo que el mundo tiene del síndrome de Down y enviar un mensaje global de aceptación para todos.</p>
     </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
